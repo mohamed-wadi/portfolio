@@ -2,8 +2,11 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gray-950 text-white pt-16">
-      <div className="container mx-auto px-4 py-16 flex flex-col items-center text-center">
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center justify-center bg-gray-950 text-white pt-16 relative"
+    >
+      <div className="container mx-auto px-4 py-16 flex flex-col items-center text-center relative z-10">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Wadi Mohamed

@@ -1,4 +1,5 @@
 import React from 'react';
+import backgroundImage from '../../assets/images/Background.jpg';
 
 const About = () => {
   return (
@@ -11,8 +12,20 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <div className="bg-gray-700 p-2 rounded-lg shadow-xl">
-              <div className="aspect-square bg-gray-600 rounded-lg overflow-hidden flex items-center justify-center">
-                <img src="/profile.jpg" alt="Wadi Mohamed" className="object-cover w-36 h-36 rounded-full border-4 border-blue-400 shadow-lg" />
+              <div 
+                className="aspect-square rounded-lg overflow-hidden flex items-center justify-center relative"
+                style={{
+                  backgroundImage: `url(${backgroundImage})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}
+              >
+                <div className="absolute inset-0 bg-gray-800 opacity-70"></div>
+                <img 
+                  src="/images/logo.jpeg" 
+                  alt="Wadi Mohamed" 
+                  className="object-cover w-36 h-36 rounded-full border-4 border-blue-400 shadow-lg z-10 relative" 
+                />
               </div>
             </div>
           </div>

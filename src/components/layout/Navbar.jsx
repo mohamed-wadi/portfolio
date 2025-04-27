@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logoImage from '../../assets/images/logo.jpeg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,14 @@ const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-2xl font-bold"
+          className="flex items-center"
         >
-          <span className="text-blue-400">Port</span>folio
+          <img 
+            src={logoImage} 
+            alt="Portfolio Logo" 
+            className="h-10 w-10 rounded-full mr-3 object-cover border-2 border-blue-400" 
+          />
+          <span className="text-2xl font-bold"><span className="text-blue-400">Port</span>folio</span>
         </motion.div>
 
         {/* Desktop Menu */}

@@ -1,26 +1,21 @@
-/* Custom styles that extend Tailwind */
+/* Custom styles for the portfolio site */
 
-/* Smooth scrolling for the entire page */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+/* Custom transition for hover effects */
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
-::-webkit-scrollbar-track {
-  background: #1f2937;
+.transition-transform {
+  transition: transform 0.3s ease;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #3b82f6;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+.transition-all {
+  transition: all 0.3s ease;
 }
 
 /* Make sure the root element takes full width */
